@@ -6023,5 +6023,235 @@
       "establishment"
     ],
     "formatted_address": "38-04 11th St, Long Island City, NY 11101, USA"
-  }
+  },
+  "1000410015|60 PINE STREET": null,
+  "1000530002|99 WASHINGTON STREET": null,
+  "1000780020|106 FULTON STREET": null,
+  "1001620011|20 MOTT STREET": null,
+  "1001960009|416 BROADWAY": null,
+  "1002390020|116 BOWERY": null,
+  "1004610006|35 COOPER SQUARE": null,
+  "1004650001|31 3 AVENUE": null,
+  "1004670001|67 3 AVENUE": null,
+  "1004810001|400 BROOME STREET": null,
+  "1005320008|246 MERCER STREET": null,
+  "1005520026|37 WASHINGTON SQUARE W": null,
+  "1005580037|131 EAST 12 STREET": null,
+  "1005590012|106 EAST 14 STREET": null,
+  "1005590022|126 EAST 14 STREET": null,
+  "1006440060|57 GANSEVOORT STREET": null,
+  "1006950001|182 11 AVENUE": null,
+  "1007080065|450 11 AVENUE": null,
+  "1007280042|406 WEST 31 STREET": null,
+  "1007320001|461 WEST 34 STREET": {
+    "google_name": "Courtyard by Marriott New York Manhattan/Midtown West",
+    "place_id": "ChIJwYMCp7NZwokR3DV7fQaGJ4s",
+    "types": [
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "service",
+      "establishment"
+    ],
+    "formatted_address": "461 West 34th Street, At the corner of 34th and 10th\u2013 across from, 461 W 34th St., New York, NY 10001, USA"
+  },
+  "1007590029|319 WEST 35 STREET": null,
+  "1007700008|245 WEST 20 STREET": null,
+  "1007730044|232 7 AVENUE": null,
+  "1007760033|210 WEST 27 STREET": null,
+  "1007760055|230 WEST 27 STREET": null,
+  "1007840012|255 WEST 34 STREET": null,
+  "1007890078|618 8 AVENUE": null,
+  "1008020078|297 7 AVENUE": null,
+  "1008060076|371 7 AVENUE": null,
+  "1008370001|960 AVENUE OF THE AMERICAS": null,
+  "1008400081|58 WEST 39 STREET": {
+    "google_name": "Xadia Hotel",
+    "place_id": "ChIJBXRtFABZwokRB8rE-ikCmmU",
+    "types": [
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "58 W 39th St, New York, NY 10018, USA"
+  },
+  "1008430022|21 UNION SQUARE": null,
+  "1008590026|30 EAST 30 STREET": null,
+  "1008600071|18 EAST 31 STREET": null,
+  "1008610010|11 EAST 31 STREET": {
+    "google_name": "Arlo NoMad",
+    "place_id": "ChIJVTHBbqhZwokR57PGOxTXH08",
+    "types": [
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "11 E 31st St, New York, NY 10016, USA"
+  },
+  "1008670020|237 MADISON AVENUE": null,
+  "1008770018|2 LEXINGTON AVENUE": null,
+  "1008790044|318 3 AVENUE": null,
+  "1008850015|119 EAST 29 STREET": null,
+  "1008960001|125 3 AVENUE": null,
+  "1009210006|307 EAST 14 STREET": null,
+  "1009210051|318 EAST 15 STREET": null,
+  "1009290038|340 EAST 24 STREET": null,
+  "1009990046|128 WEST 47 STREET": null,
+  "1010080001|859 7 AVENUE": null,
+  "1010170001|740 8 AVENUE": null,
+  "1010260021|1708 BROADWAY": null,
+  "1010360021|317 WEST 45 STREET": null,
+  "1010370029|303 WEST 46 STREET": null,
+  "1010390027|305 WEST 48 STREET": {
+    "google_name": "CIVILIAN Hotel",
+    "place_id": "ChIJa8p5vVZYwokR7vQGiqjQcoc",
+    "types": [
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "305 W 48th St, New York, NY 10036, USA"
+  },
+  "1011620060|266 WEST 71 STREET": {
+    "google_name": "Inn New York City",
+    "place_id": "ChIJ1c_Hv2FYwokRD-UX61MByx8",
+    "types": [
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "266 W 71st St, New York, NY 10023, USA"
+  },
+  "1011840077|305 WEST END AVENUE": null,
+  "1012330025|207 WEST 85 STREET": null,
+  "1012480014|333 WEST 86 STREET": null,
+  "1012590025|15 WEST 43 STREET": null,
+  "1012670030|3 WEST 51 STREET": null,
+  "1012780065|6 EAST 44 STREET": null,
+  "1012810021|45 EAST 45 STREET": null,
+  "1013090005|111 EAST 54 STREET": null,
+  "1013110059|698 LEXINGTON AVENUE": null,
+  "1013370148|302 EAST 45 STREET": null,
+  "1013480036|330 EAST 56 STREET": {
+    "google_name": "AKA Sutton Place",
+    "place_id": "ChIJVxMh2eRYwokRXteR4rg3E0M",
+    "types": [
+      "extended_stay_hotel",
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "330 E 56th St, New York, NY 10022, USA"
+  },
+  "1013610001|1 MITCHELL PLACE": null,
+  "1013690107|415 EAST 57 STREET": null,
+  "1013740065|4 EAST 60 STREET": null,
+  "1013760046|36 EAST 62 STREET": null,
+  "1013770033|560 PARK AVENUE": null,
+  "1013780130|41 EAST 63 STREET": null,
+  "1014040001|701 PARK AVENUE": null,
+  "1014350021|347 EAST 60 STREET": null,
+  "1014370017|341 EAST 62 STREET": {
+    "google_name": "The Sixty Two",
+    "place_id": "ChIJS1aPM2JZwokR4lOxF-RCWWU",
+    "types": [
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "341 E 62nd St, New York, NY 10065, USA"
+  },
+  "1016760011|325 EAST 104 STREET": null,
+  "1017240021|35 WEST 126 STREET": null,
+  "1017890050|2291 3 AVENUE": null,
+  "1019630030|1235 AMSTERDAM AVENUE": null,
+  "1020060007|175 WEST 137 STREET": null,
+  "1020660033|828 ST NICHOLAS AVENUE": null,
+  "1020680067|889 ST NICHOLAS AVENUE": null,
+  "1021490076|2525 AMSTERDAM AVENUE": null,
+  "3001400160|339 ADAMS STREET": null,
+  "3001460014|229 DUFFIELD STREET": null,
+  "3001570009|1 HOYT STREET": null,
+  "3002310001|51 CLARK STREET": null,
+  "3004060067|279 BUTLER STREET": null,
+  "3004340016|625 UNION STREET": null,
+  "3004660001|130 3 STREET": null,
+  "3009800107|399 3 AVENUE": null,
+  "3010330005|537 3 AVENUE": null,
+  "3019090015|131 EMERSON PLACE": null,
+  "3023710048|45 AINSLIE STREET": null,
+  "3024570034|159 BROADWAY": null,
+  "3024620027|341 BROADWAY": {
+    "google_name": "International Students Residence",
+    "place_id": "ChIJ6YXOJVFbwokR9GAFe_UHeFg",
+    "types": [
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "341 Broadway, New York, NY 10013, USA"
+  },
+  "3024790023|59 BOX STREET": null,
+  "3025220003|214 FRANKLIN STREET": {
+    "google_name": "Franklin Guesthouse",
+    "place_id": "ChIJKcaRPT5ZwokRRkG5SW6KMf8",
+    "types": [
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "214 Franklin St, Brooklyn, NY 11222, USA"
+  },
+  "3026580026|99 SUTTON STREET": null,
+  "3029230003|14 OLIVE STREET": null,
+  "3029940075|25 STEWART AVENUE": null,
+  "3031100028|249 VARET STREET": null,
+  "4003770013|35-02 37 AVENUE": null,
+  "4003850005|38-23 28 STREET": {
+    "google_name": "The Modernist Hotel",
+    "place_id": "ChIJpawY_WpfwokRlkzlUqG5r24",
+    "types": [
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "38-30 28th St, Long Island City, NY 11101, USA"
+  },
+  "4003860023|38-20 28 STREET": null,
+  "4003860027|38-30 28 STREET": {
+    "google_name": "The Modernist Hotel",
+    "place_id": "ChIJpawY_WpfwokRlkzlUqG5r24",
+    "types": [
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "38-30 28th St, Long Island City, NY 11101, USA"
+  },
+  "4004060040|40-40 27 STREET": {
+    "google_name": "LIC Plaza Hotel Corp",
+    "place_id": "ChIJ60CQrUBZwokRE1WowwuEK1w",
+    "types": [
+      "hotel",
+      "extended_stay_hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "40-36 27th St, Long Island City, NY 11101, USA"
+  },
+  "4004730553|38-75 11 STREET": null,
+  "4004740010|38-47 10 STREET": null,
+  "4010030011|71-11 ASTORIA BOULEVARD N": null,
+  "4010040052|72-05 ASTORIA BOULEVARD N": null
 }

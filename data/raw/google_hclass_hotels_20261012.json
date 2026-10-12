@@ -1,0 +1,187 @@
+[
+  {
+    "bbl": "1007320001",
+    "address": "461 WEST 34 STREET",
+    "google_name": "Courtyard by Marriott New York Manhattan/Midtown West",
+    "place_id": "ChIJwYMCp7NZwokR3DV7fQaGJ4s",
+    "types": [
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "service",
+      "establishment"
+    ],
+    "formatted_address": "461 West 34th Street, At the corner of 34th and 10th\u2013 across from, 461 W 34th St., New York, NY 10001, USA"
+  },
+  {
+    "bbl": "1008400081",
+    "address": "58 WEST 39 STREET",
+    "google_name": "Xadia Hotel",
+    "place_id": "ChIJBXRtFABZwokRB8rE-ikCmmU",
+    "types": [
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "58 W 39th St, New York, NY 10018, USA"
+  },
+  {
+    "bbl": "1008610010",
+    "address": "11 EAST 31 STREET",
+    "google_name": "Arlo NoMad",
+    "place_id": "ChIJVTHBbqhZwokR57PGOxTXH08",
+    "types": [
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "11 E 31st St, New York, NY 10016, USA"
+  },
+  {
+    "bbl": "1010390027",
+    "address": "305 WEST 48 STREET",
+    "google_name": "CIVILIAN Hotel",
+    "place_id": "ChIJa8p5vVZYwokR7vQGiqjQcoc",
+    "types": [
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "305 W 48th St, New York, NY 10036, USA"
+  },
+  {
+    "bbl": "1011620060",
+    "address": "266 WEST 71 STREET",
+    "google_name": "Inn New York City",
+    "place_id": "ChIJ1c_Hv2FYwokRD-UX61MByx8",
+    "types": [
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "266 W 71st St, New York, NY 10023, USA"
+  },
+  {
+    "bbl": "1013480036",
+    "address": "330 EAST 56 STREET",
+    "google_name": "AKA Sutton Place",
+    "place_id": "ChIJVxMh2eRYwokRXteR4rg3E0M",
+    "types": [
+      "extended_stay_hotel",
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "330 E 56th St, New York, NY 10022, USA"
+  },
+  {
+    "bbl": "1014370017",
+    "address": "341 EAST 62 STREET",
+    "google_name": "The Sixty Two",
+    "place_id": "ChIJS1aPM2JZwokR4lOxF-RCWWU",
+    "types": [
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "341 E 62nd St, New York, NY 10065, USA"
+  },
+  {
+    "bbl": "3024620027",
+    "address": "341 BROADWAY",
+    "google_name": "International Students Residence",
+    "place_id": "ChIJ6YXOJVFbwokR9GAFe_UHeFg",
+    "types": [
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "341 Broadway, New York, NY 10013, USA"
+  },
+  {
+    "bbl": "3025220003",
+    "address": "214 FRANKLIN STREET",
+    "google_name": "Franklin Guesthouse",
+    "place_id": "ChIJKcaRPT5ZwokRRkG5SW6KMf8",
+    "types": [
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "214 Franklin St, Brooklyn, NY 11222, USA"
+  },
+  {
+    "bbl": "4003850005",
+    "address": "38-23 28 STREET",
+    "google_name": "The Modernist Hotel",
+    "place_id": "ChIJpawY_WpfwokRlkzlUqG5r24",
+    "types": [
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "38-30 28th St, Long Island City, NY 11101, USA"
+  },
+  {
+    "bbl": "4003860027",
+    "address": "38-30 28 STREET",
+    "google_name": "The Modernist Hotel",
+    "place_id": "ChIJpawY_WpfwokRlkzlUqG5r24",
+    "types": [
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "38-30 28th St, Long Island City, NY 11101, USA"
+  },
+  {
+    "bbl": "4004060040",
+    "address": "40-40 27 STREET",
+    "google_name": "LIC Plaza Hotel Corp",
+    "place_id": "ChIJ60CQrUBZwokRE1WowwuEK1w",
+    "types": [
+      "hotel",
+      "extended_stay_hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "40-36 27th St, Long Island City, NY 11101, USA"
+  },
+  {
+    "bbl": "4004740001",
+    "address": "38-78 11TH STREET",
+    "google_name": "Hampton Inn by Hilton Long Island City New York",
+    "place_id": "ChIJa47d7LBZwokRq5AfLgzwDVc",
+    "types": [
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "38-04 11th St, Long Island City, NY 11101, USA"
+  },
+  {
+    "bbl": "4004740056",
+    "address": "38-60 11 STREET",
+    "google_name": "Hampton Inn by Hilton Long Island City New York",
+    "place_id": "ChIJa47d7LBZwokRq5AfLgzwDVc",
+    "types": [
+      "hotel",
+      "lodging",
+      "point_of_interest",
+      "establishment"
+    ],
+    "formatted_address": "38-04 11th St, Long Island City, NY 11101, USA"
+  }
+]
