@@ -11,7 +11,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from config import DATA_RAW, DATA_PROCESSED
-from src.enrich_hotel_names import search_hotel_by_address, CACHE_FILE
+from src.enrich_hotel_names import (
+    CACHE_FILE, LookupFailed, PlacesUnavailable, search_hotel_by_address, stop_on_quota,
+)
 
 TODAY = __import__("datetime").date.today().strftime("%Y%m%d")
 
@@ -53,7 +55,14 @@ def main():
                 results.append({"bbl": bbl, "address": addr, **cache[cache_key]})
             continue
 
-        result = search_hotel_by_address(addr)
+        try:
+            result = search_hotel_by_address(addr)
+        except LookupFailed as e:
+            print(f"    Skipped, will retry next run: {e}")
+            continue
+        except PlacesUnavailable as e:
+            CACHE_FILE.write_text(json.dumps(cache, indent=2, default=str))
+            stop_on_quota(e, done=i, total=len(hclass))
         if result:
             cache[cache_key] = result
             results.append({"bbl": bbl, "address": addr, **result})

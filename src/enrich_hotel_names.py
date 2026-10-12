@@ -10,6 +10,7 @@ import json
 import os
 import ssl
 import time
+import urllib.error
 import urllib.request
 from datetime import date
 from pathlib import Path
@@ -36,6 +37,17 @@ def _looks_like_llc(name: str) -> bool:
     return any(upper.endswith(s) or f" {s} " in f" {upper} " or f" {s}." in f" {upper}." for s in LLC_SUFFIXES)
 
 
+class PlacesUnavailable(Exception):
+    """Google refused the search outright: daily cap reached, key or billing.
+
+    Kept apart from "no hotel at this address" on purpose. Both used to come
+    back as None, and the callers cached None as a miss, so a run that hit the
+    100/day Text Search cap recorded every remaining building as having no
+    hotel. The hotel-class count swung 0, 17, 15, 4 across runs with nothing
+    in the buildings changing.
+    """
+
+
 def _places_search(query: str, included_type: str = ""):
     """Raw Places API text search. Returns first place or None."""
     payload = {"textQuery": query, "maxResultCount": 1}
@@ -52,7 +64,12 @@ def _places_search(query: str, included_type: str = ""):
             "X-Goog-FieldMask": "places.id,places.displayName,places.types,places.formattedAddress",
         },
     )
-    resp = urllib.request.urlopen(req, context=CTX, timeout=15)
+    try:
+        resp = urllib.request.urlopen(req, context=CTX, timeout=15)
+    except urllib.error.HTTPError as e:
+        if e.code in (403, 429):
+            raise PlacesUnavailable(f"Places returned {e.code}: {e.read()[:300]!r}") from e
+        raise
     data = json.loads(resp.read())
     places = data.get("places", [])
     return places[0] if places else None
@@ -98,9 +115,17 @@ def search_hotel_by_address(address: str, biz_name: str = ""):
         place = _places_search(f"hotel near {addr_query}")
         if place and _is_lodging(place):
             return verified(place)
+    except PlacesUnavailable:
+        raise
     except Exception as e:
-        print(f"    Error searching {address}: {e}")
+        # A network blip or a 5xx. Not an answer about the building, so the
+        # caller must not cache it as one.
+        raise LookupFailed(f"{address}: {e}") from e
     return None
+
+
+class LookupFailed(Exception):
+    """One search failed for a passing reason; try this building next run."""
 
 
 def _is_lodging(place: dict) -> bool:
@@ -115,6 +140,18 @@ def _extract(place: dict) -> dict:
         "types": place.get("types", []),
         "formatted_address": place.get("formattedAddress", ""),
     }
+
+
+def stop_on_quota(err: Exception, done: int, total: int):
+    """End the sweep loudly rather than publish a partial one as complete.
+
+    The cache is saved first, so a run by hand picks up where this stopped.
+    Exits non-zero so the workflow's sweep check names this step.
+    """
+    print(f"::error title=Google Places refused::{err}")
+    print(f"Stopped at {done}/{total}. Cache saved; run again after the daily "
+          f"quota resets (03:00 New York) to carry on from here.")
+    sys.exit(2)
 
 
 def load_hotel_licenses() -> list[dict]:
@@ -137,6 +174,7 @@ def enrich():
     new_lookups = 0
     cached_hits = 0
     errors = 0
+    failed = 0
 
     for i, lic in enumerate(active):
         bbl = (lic.get("bbl") or "").strip()
@@ -158,7 +196,15 @@ def enrich():
                 results.append({"bbl": bbl, "address": addr, **result})
             continue
 
-        result = search_hotel_by_address(addr, biz_name)
+        try:
+            result = search_hotel_by_address(addr, biz_name)
+        except LookupFailed as e:
+            print(f"    Skipped, will retry next run: {e}")
+            failed += 1
+            continue
+        except PlacesUnavailable as e:
+            CACHE_FILE.write_text(json.dumps(cache, indent=2, default=str))
+            stop_on_quota(e, done=i, total=len(active))
         if result:
             cache[cache_key] = result
             results.append({"bbl": bbl, "address": addr, **result})
@@ -180,6 +226,7 @@ def enrich():
     print(f"  New API lookups: {new_lookups}")
     print(f"  From cache: {cached_hits}")
     print(f"  No result: {errors}")
+    print(f"  Failed, retry next run: {failed}")
     print(f"Saved -> {OUTPUT_FILE}")
     return results
 

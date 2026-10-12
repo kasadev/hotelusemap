@@ -58,3 +58,12 @@ map/dist/
 !data/raw/web_corroboration_cache.json
 !data/raw/web_current_use_[0-9]*.json
 !data/raw/web_current_use_cache.json
+
+# The hotel-name lookups, shared by the hotel-name and hotel-class sweeps. Left
+# out, every Actions run started cold: about 650 license addresses plus the
+# hotel-class buildings, against a 100/day Text Search cap, so the hotel-name
+# sweep spent the day's quota and the hotel-class sweep got what was left. Its
+# count read 0, 17, 15 and 4 on four runs (2026-10-12). Committed, a weekly run
+# only looks up what is new. Entries are verified matches or real misses; a
+# refused or failed search is no longer written here.
+!data/raw/google_hotel_names_cache.json
